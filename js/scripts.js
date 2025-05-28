@@ -33,10 +33,13 @@ let pokemonRepository = (function () {
         let list = document.querySelector('.pokemon-list');
         let template = document.querySelector('#cartridge-template');
 
+        let col = document.createElement('div');
+        col.classList.add('col-6', 'col-md-4', 'col-lg-4', 'mb-3');
+
         // (true) clones entire sub tree of template
         let clone = template.content.cloneNode(true);
 
-        // Random color with Math.floor() Math.random()
+        // random color with Math.floor() Math.random()
         let cartColors = [
             'cart--red',
             'cart--blue',
@@ -64,7 +67,8 @@ let pokemonRepository = (function () {
             showDetails(pokemon);
         });
 
-        list.appendChild(clone);
+        col.appendChild(clone);
+        list.appendChild(col);
     }
 
     function loadList() {
