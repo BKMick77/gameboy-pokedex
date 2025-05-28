@@ -27,8 +27,8 @@
 -   DOM manipulation and dynamically creating elements
 -   Creating modals and handling UI state with JavaScript.
 -   Styling responsive layouts with Bootstrap and custom CSS
-<img src="images/gameboy.png" width="50%" />
-<img src="images/cart-gray.png" width="50%" />
-<img src="images/cart-yellow.png" width="50%" />
-<img src="images/cart-blue.png" width="50%" />
-<img src="images/cart-red.png" width="50%" />
+<img src="img/gameboy.png" width="50%" />
+<img src="img/cart-gray.png" width="50%" />
+<img src="img/cart-yellow.png" width="50%" />
+<img src="img/cart-blue.png" width="50%" />
+<img src="img/cart-red.png" width="50%" />
