@@ -240,7 +240,7 @@
 .grip-r1 {
     position: absolute;
     width: 28px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 28.7px;
     left: 0px;
@@ -251,7 +251,7 @@
 .grip-r2 {
     position: absolute;
     width: 25.9px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 37.1px;
     left: 0px;
@@ -262,7 +262,7 @@
 .grip-r3 {
     position: absolute;
     width: 24.5px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 45.5px;
     left: 0px;
@@ -274,7 +274,7 @@
 .grip-r4 {
     position: absolute;
     width: 25.9px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 53.9px;
     left: 0px;
@@ -286,7 +286,7 @@
 .grip-r5 {
     position: absolute;
     width: 28px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 62.3px;
     left: 0px;
@@ -298,7 +298,7 @@
 .grip-l1 {
     position: absolute;
     width: 28px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 28.7px;
     right: 0px;
@@ -309,7 +309,7 @@
 .grip-l2 {
     position: absolute;
     width: 25.9px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 37.1px;
     right: 0px;
@@ -320,7 +320,7 @@
 .grip-l3 {
     position: absolute;
     width: 24.5px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 45.5px;
     right: 0px;
@@ -332,7 +332,7 @@
 .grip-l4 {
     position: absolute;
     width: 25.9px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 53.9px;
     right: 0px;
@@ -344,7 +344,7 @@
 .grip-l5 {
     position: absolute;
     width: 28px;
-    height: 1.4px;
+    height: 2px;
     background-color: var(--secondary);
     top: 62.3px;
     right: 0px;
