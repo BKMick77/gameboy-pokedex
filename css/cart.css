@@ -66,25 +66,7 @@
     --label: #0e4eff;
 }
 
-.gameboy-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-}
-
-.gameboy-modal.is-visible {
-    display: flex;
-}
-
 .cart-body:hover {
-    box-shadow: 0 0 0 25px #000;
     transform: scale(1.1);
 }
 
@@ -123,7 +105,7 @@
 
 .nintendo-logo {
     position: absolute;
-    top: 2.8rem;
+    top: 2.5rem;
     left: 2.45rem;
     font-family: 'Pretendo';
     font-size: 0.7rem;
@@ -135,7 +117,7 @@
 .gb-logo {
     display: flex;
     position: absolute;
-    top: 2.56rem;
+    top: 2.1rem;
     left: 6.2rem;
     font-family: 'Game Boy 1989';
     font-size: 1.23rem;
@@ -148,7 +130,7 @@
 .tm {
     display: flex;
     position: absolute;
-    top: 3.08rem;
+    top: 2.8rem;
     left: 12.2rem;
     font-family: 'Game Boy 1989';
     font-size: 0.455rem;
@@ -232,26 +214,26 @@
 
 .side-text__r {
     position: absolute;
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     color: #333;
     font-family: Helvetica;
     letter-spacing: 1px;
     writing-mode: vertical-rl;
-    top: 175px;
-    left: 27px;
+    top: 155px;
+    left: 30px;
     font-weight: 900;
 }
 
 .side-text__l {
     position: absolute;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: #333;
     font-family: Helvetica;
     letter-spacing: 1px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     top: 130px;
-    left: 208px;
+    left: 200px;
     font-weight: 900;
 }
 
