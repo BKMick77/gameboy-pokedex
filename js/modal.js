@@ -8,9 +8,6 @@ let modalModule = (function () {
 
         modalContainer.querySelector('h1').innerText = title;
         modalContainer.querySelector('p').innerText = text;
-        // console.log('pixelUrl:', pixelUrl);
-        // modalContainer.querySelector('.pokemon-img').src = pixelUrl;
-        // modalContainer.querySelector('.pokemon-img').src = imgURL;
 
         document.body.appendChild(clone);
         modalContainer.classList.add('is-visible');
