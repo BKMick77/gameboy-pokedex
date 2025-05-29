@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/gameboy.css" />
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
+    <script src="js/tota11y.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid d-flex align-items-center">
+          <a class="navbar-brand" href="#"></a>
+          <img
+            src="img/pokemon.svg"
+            alt="Pokemon logo."
+            class="page-header_item logo-img"
+          />
+
+          <div class="flex-grow-1"></div>
+
+          <a class="navbar-brand" href="#"></a>
+          <img
+            src="img/Nintendo_red_logo.svg"
+            alt="Nintendo logo."
+            height="75"
+            class="page-header_item logo-img"
+          />
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row pokemon-list"></div>
+      </div>
+
+      <template id="cartridge-template">
+        <div class="cart-container">
+          <div class="cart--red">
+            <div class="cart-body">
+              <div class="logo"></div>
+              <div class="nintendo-logo">Nintendo</div>
+              <div class="gb-logo">GAMEBOY</div>
+              <div class="tm">TM</div>
+
+              <div class="label">
+                <h5 class="poke-name"></h5>
+                <img class="poke-sprite" />
+              </div>
+              <div class="triangle"></div>
+              <div class="side-notch__l"></div>
+              <div class="side-notch__r"></div>
+              <div class="side-text__r">MADE IN JAPAN</div>
+              <div class="side-text__l">THIS SIDE OUT</div>
+              <div class="grip-r1"></div>
+              <div class="grip-r2"></div>
+              <div class="grip-r3"></div>
+              <div class="grip-r4"></div>
+              <div class="grip-r5"></div>
+              <div class="grip-l1"></div>
+              <div class="grip-l2"></div>
+              <div class="grip-l3"></div>
+              <div class="grip-l4"></div>
+              <div class="grip-l5"></div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <section>
+      <ul class="pokemon-list"></ul>
+    </section>
+    <template id="gameboy-template">
+      <div class="gameboy-modal">
+        <div class="gb-wrapper">
+          <div class="gameboy">
+            <div class="screen-border">
+              <div class="screen">
+                <div class="text-block">
+                  <h1></h1>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                </div>
+                <img src=" " alt="Image" class="pokemon-img" />
+              </div>
+              <div class="pinstripe-red"></div>
+              <div class="pinstripe-blue"></div>
+              <div class="dot-matrix">DOT MATRIX WITH STEREO SOUND</div>
+              <div class="pinstripe2-red"></div>
+              <div class="pinstripe2-blue"></div>
+              <div class="power"></div>
+            </div>
+            <div class="controls">
+              <div class="nintendo-logo">Nintendo</div>
+              <div class="gb-logo">GAMEBOY</div>
+              <div class="tm">TM</div>
+              <div class="dpad">
+                <div class="dpad-vert"></div>
+                <div class="dpad-hor"></div>
+                <div class="dpad-center"></div>
+              </div>
+              <div class="ab-buttons">
+                <div class="a-button"></div>
+                <div class="b-button"></div>
+              </div>
+              <div class="ab-buttons-text">
+                <div class="b-button-text">B</div>
+                <div class="a-button-text">A</div>
+              </div>
+              <div class="start-select">
+                <div class="select"></div>
+                <div class="select-text">SELECT</div>
+                <div class="start"></div>
+                <div class="start-text">START</div>
+              </div>
+              <div class="vent-wrapper">
+                <div class="speaker-vents">
+                  <div class="vent1"></div>
+                  <div class="vent2"></div>
+                  <div class="vent3"></div>
+                  <div class="vent4"></div>
+                  <div class="vent5"></div>
+                  <div class="vent6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
