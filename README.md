@@ -1,5 +1,7 @@
 # Pokédex Web App
 
+## Check out the live app [here](https://bkmick77.github.io/gameboy-pokedex/).
+
 ## App Features
 
 -   Loads Pokémon data from PokéApi
