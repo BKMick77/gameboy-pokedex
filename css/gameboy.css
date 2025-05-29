@@ -64,11 +64,20 @@
 }
 
 .screen h1 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
 }
 
 .screen p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+}
+
+.pokemon-img {
+    width: 135px;
+    height: 135px;
+    image-rendering: pixelated;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .pinstripe-red {
