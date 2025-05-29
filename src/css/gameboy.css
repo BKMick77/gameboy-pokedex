@@ -389,9 +389,7 @@
 
 @media (max-width: 480px) {
   .gameboy {
-    transform: scale(0.7);
+    transform: scale(0.75);
     transform-origin: top center;
-    max-width: 100vw;
-    max-height: 90vh;
   }
 }
