@@ -10,7 +10,7 @@
     -   Weight
     -   Type
     -   Image
-- Infinite Scroll Functionality
+-   Infinite Scroll Functionality
 -   Responsive layout
 
 ## Technology Used
@@ -34,6 +34,7 @@
 -   DOM manipulation and dynamically creating elements
 -   Creating modals and handling UI state with JavaScript.
 -   Styling responsive layouts with Bootstrap and custom CSS
+
     <img src="img/gameboy.png" width="50%" />
     <img src="img/cart-gray.png" width="50%" />
     <img src="img/cart-yellow.png" width="50%" />
