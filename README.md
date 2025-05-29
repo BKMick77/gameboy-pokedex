@@ -9,7 +9,7 @@
     -   Height
     -   Weight
     -   Type
-    -  Image
+    -   Image
 -   Responsive layout
 
 ## Technology Used
@@ -20,6 +20,12 @@
 -   Bootstrap
 -   PokeApi
 
+## Future Developments
+
+-   Search functionality
+-   Filtering by pokémon type
+-   Improved alt sprite support
+
 ## Learning Experience
 
 -   How to structure JavaScript with modular patterns
@@ -27,8 +33,8 @@
 -   DOM manipulation and dynamically creating elements
 -   Creating modals and handling UI state with JavaScript.
 -   Styling responsive layouts with Bootstrap and custom CSS
-<img src="img/gameboy.png" width="50%" />
-<img src="img/cart-gray.png" width="50%" />
-<img src="img/cart-yellow.png" width="50%" />
-<img src="img/cart-blue.png" width="50%" />
-<img src="img/cart-red.png" width="50%" />
+    <img src="img/gameboy.png" width="50%" />
+    <img src="img/cart-gray.png" width="50%" />
+    <img src="img/cart-yellow.png" width="50%" />
+    <img src="img/cart-blue.png" width="50%" />
+    <img src="img/cart-red.png" width="50%" />
