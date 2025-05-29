@@ -1,388 +1,395 @@
 .gameboy-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .gameboy-modal.is-visible {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .gameboy {
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr auto;
-    justify-items: center;
-    margin: 20px auto;
-    width: 422px;
-    height: 697px;
-    background: #c4beb9;
-    border-radius: 10px 10px 60px 10px;
-    box-shadow: 5px 5px rgba(130, 126, 137, 0.8);
-    border: 1px solid #000;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  margin: 20px auto;
+  width: 422px;
+  height: 697px;
+  background: #c4beb9;
+  border-radius: 10px 10px 60px 10px;
+  box-shadow: 5px 5px rgba(130, 126, 137, 0.8);
+  border: 1px solid #000;
 }
 
 .screen-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 95%;
-    max-width: 400px;
-    aspect-ratio: 1.1 / 1;
-    margin-top: 1.3rem;
-    background: #827e89;
-    border-radius: 5px 5px 40px 5px;
-    border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 95%;
+  max-width: 400px;
+  aspect-ratio: 1.1 / 1;
+  margin-top: 1.3rem;
+  background: #827e89;
+  border-radius: 5px 5px 40px 5px;
+  border: 1px solid #000;
 }
 
 .screen {
-    width: 80%;
-    aspect-ratio: 1 / 1;
-    background: #8a9f54;
-    border-radius: 10px;
-    font-family: 'Press Start 2P', monospace;
-    text-align: center;
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  background: #8a9f54;
+  border-radius: 10px;
+  font-family: "Press Start 2P", monospace;
+  text-align: center;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .screen h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .screen p {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .pokemon-img {
-    width: 135px;
-    height: 135px;
-    image-rendering: pixelated;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+  width: 135px;
+  height: 135px;
+  image-rendering: pixelated;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .pinstripe-red {
-    background: #72032b;
-    height: 2.2px;
-    width: 175px;
-    left: 0.65rem;
-    top: 0.4rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  background: #72032b;
+  height: 2.2px;
+  width: 175px;
+  left: 0.65rem;
+  top: 0.4rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .pinstripe-blue {
-    background: #000435;
-    height: 2.2px;
-    width: 175px;
-    left: 0.65rem;
-    top: 0.9rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  background: #000435;
+  height: 2.2px;
+  width: 175px;
+  left: 0.65rem;
+  top: 0.9rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .gameboy .screen-border .dot-matrix {
-    font-family: 'Helvetica_Condenced-Normal';
-    font-size: 0.85rem;
-    color: #e9e8e6;
-    left: 11.75rem;
-    top: 0.15rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  font-family: "Helvetica_Condenced-Normal";
+  font-size: 0.85rem;
+  color: #e9e8e6;
+  left: 11.75rem;
+  top: 0.15rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .pinstripe2-red {
-    background: #72032b;
-    height: 2.2px;
-    width: 55px;
-    left: 21.1rem;
-    top: 0.4rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  background: #72032b;
+  height: 2.2px;
+  width: 55px;
+  left: 21.1rem;
+  top: 0.4rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .pinstripe2-blue {
-    background: #000435;
-    height: 2.2px;
-    width: 55px;
-    left: 21.1rem;
-    top: 0.9rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  background: #000435;
+  height: 2.2px;
+  width: 55px;
+  left: 21.1rem;
+  top: 0.9rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .power {
-    background: #c1001f;
-    height: 11px;
-    width: 11px;
-    left: 0.8rem;
-    top: 5rem;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 3;
-    border: 0.25px solid #000;
+  background: #c1001f;
+  height: 11px;
+  width: 11px;
+  left: 0.8rem;
+  top: 5rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  border: 0.25px solid #000;
 }
 
 .battery {
-    font-family: 'Helvetica Neue';
-    font-size: 0.72rem;
-    color: #e9e8e6;
-    left: 0.13rem;
-    top: 5.9rem;
-    position: absolute;
-    border-radius: 8%;
-    z-index: 3;
+  font-family: "Helvetica Neue";
+  font-size: 0.72rem;
+  color: #e9e8e6;
+  left: 0.13rem;
+  top: 5.9rem;
+  position: absolute;
+  border-radius: 8%;
+  z-index: 3;
 }
 
 .controls {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
 .gameboy .controls .nintendo-logo {
-    display: flex;
-    position: absolute;
-    left: 1px;
-    font-family: 'Pretendo';
-    font-size: 1rem;
-    top: 0.65rem;
-    color: #242060;
+  display: flex;
+  position: absolute;
+  left: 1px;
+  font-family: "Pretendo";
+  font-size: 1rem;
+  top: 0.65rem;
+  color: #242060;
 }
 
 .gameboy .controls .gb-logo {
-    display: flex;
-    position: absolute;
-    left: 87px;
-    font-family: 'Game Boy 1989';
-    font-size: 1.75rem;
-    top: 0.1rem;
-    letter-spacing: 0.02em;
-    color: #242060;
+  display: flex;
+  position: absolute;
+  left: 87px;
+  font-family: "Game Boy 1989";
+  font-size: 1.75rem;
+  top: 0.1rem;
+  letter-spacing: 0.02em;
+  color: #242060;
 }
 
 .gameboy .controls .tm {
-    display: flex;
-    position: absolute;
-    left: 225px;
-    font-family: 'Game Boy 1989';
-    font-size: 0.65rem;
-    top: 1.1rem;
-    color: #242060;
+  display: flex;
+  position: absolute;
+  left: 225px;
+  font-family: "Game Boy 1989";
+  font-size: 0.65rem;
+  top: 1.1rem;
+  color: #242060;
 }
 
 .ab-buttons {
-    position: absolute;
-    display: flex;
-    gap: 1rem;
-    transform: rotate(-35deg);
-    top: 90px;
-    left: 275px;
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  transform: rotate(-35deg);
+  top: 90px;
+  left: 275px;
 }
 
 .a-button {
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    background: #72032b;
-    border: 2px solid #000;
-    z-index: 3;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #72032b;
+  border: 2px solid #000;
+  z-index: 3;
 }
 
 .b-button {
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    background: #72032b;
-    border: 2px solid #000;
-    z-index: 3;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #72032b;
+  border: 2px solid #000;
+  z-index: 3;
 }
 
 .ab-buttons-text {
-    position: absolute;
-    display: flex;
-    gap: 3.8rem;
-    transform: rotate(-35deg);
-    top: 135px;
-    left: 310px;
+  position: absolute;
+  display: flex;
+  gap: 3.8rem;
+  transform: rotate(-35deg);
+  top: 135px;
+  left: 310px;
 }
 
 .a-button-text {
-    font-family: 'Orbitron';
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #242060;
+  font-family: "Orbitron";
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #242060;
 }
 
 .b-button-text {
-    font-family: 'Orbitron';
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #242060;
+  font-family: "Orbitron";
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #242060;
 }
 
 .dpad-vert {
-    position: absolute;
-    width: 90px;
-    height: 35px;
-    top: 100px;
-    left: 30px;
-    transform: rotate(90deg);
-    background: #2b2a2e;
-    z-index: 3;
-    border-radius: 5px;
-    border: 3px solid #000;
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  top: 100px;
+  left: 30px;
+  transform: rotate(90deg);
+  background: #2b2a2e;
+  z-index: 3;
+  border-radius: 5px;
+  border: 3px solid #000;
 }
 
 .dpad-hor {
-    position: absolute;
-    width: 90px;
-    height: 35px;
-    top: 100px;
-    left: 30px;
-    background: #2b2a2e;
-    z-index: 3;
-    border-radius: 5px;
-    border-width: 0px 3px 0px 3px;
-    border-style: solid;
-    border-color: #000;
+  position: absolute;
+  width: 90px;
+  height: 35px;
+  top: 100px;
+  left: 30px;
+  background: #2b2a2e;
+  z-index: 3;
+  border-radius: 5px;
+  border-width: 0px 3px 0px 3px;
+  border-style: solid;
+  border-color: #000;
 }
 
 .start {
-    position: absolute;
-    display: flex;
-    gap: 1rem;
-    transform: rotate(-30deg);
-    width: 50px;
-    height: 15px;
-    border-radius: 30%;
-    background: #827e89;
-    z-index: 3;
-    top: 200px;
-    left: 193px;
-    border: 1px solid #000;
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  transform: rotate(-30deg);
+  width: 50px;
+  height: 15px;
+  border-radius: 30%;
+  background: #827e89;
+  z-index: 3;
+  top: 200px;
+  left: 193px;
+  border: 1px solid #000;
 }
 
 .start-text {
-    display: flex;
-    position: absolute;
-    transform: rotate(-30deg);
-    top: 217px;
-    left: 205px;
-    font-family: 'Orbitron';
-    font-weight: bolder;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: #242060;
+  display: flex;
+  position: absolute;
+  transform: rotate(-30deg);
+  top: 217px;
+  left: 205px;
+  font-family: "Orbitron";
+  font-weight: bolder;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #242060;
 }
 
 .select {
-    position: absolute;
-    display: flex;
-    gap: 1rem;
-    transform: rotate(-30deg);
-    width: 50px;
-    height: 15px;
-    border-radius: 30%;
-    background: #827e89;
-    z-index: 3;
-    top: 190px;
-    left: 142px;
-    border: 1px solid #000;
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  transform: rotate(-30deg);
+  width: 50px;
+  height: 15px;
+  border-radius: 30%;
+  background: #827e89;
+  z-index: 3;
+  top: 190px;
+  left: 142px;
+  border: 1px solid #000;
 }
 
 .select-text {
-    display: flex;
-    position: absolute;
-    transform: rotate(-30deg);
-    top: 206px;
-    left: 150px;
-    font-family: 'Orbitron';
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: #242060;
+  display: flex;
+  position: absolute;
+  transform: rotate(-30deg);
+  top: 206px;
+  left: 150px;
+  font-family: "Orbitron";
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #242060;
 }
 
 .speaker-vents {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0rem;
-    right: 0rem;
-    transform: rotate(55deg);
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  transform: rotate(55deg);
+  gap: 8px;
 }
 
 .vent1 {
-    width: 68px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 68px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
 }
 
 .vent2 {
-    width: 81px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 81px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
 }
 
 .vent3 {
-    width: 89px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 89px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
 }
 
 .vent4 {
-    width: 83px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 83px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
 }
 
 .vent5 {
-    width: 75px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 75px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
 }
 
 .vent6 {
-    width: 65px;
-    height: 8px;
-    border-radius: 4px;
-    background: #d2ceca;
-    border: 0.5px solid #000;
+  width: 65px;
+  height: 8px;
+  border-radius: 4px;
+  background: #d2ceca;
+  border: 0.5px solid #000;
+}
+
+@media (max-width: 480px) {
+  .gameboy {
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
 }
