@@ -34,7 +34,7 @@ let pokemonRepository = (function () {
         let template = document.querySelector('#cartridge-template');
 
         let col = document.createElement('div');
-        col.classList.add('col-6', 'col-md-4', 'col-lg-4', 'mb-3');
+        col.classList.add('col-12', 'col-md-6', 'col-lg-4', 'mb-3');
 
         // (true) clones entire sub tree of template
         let clone = template.content.cloneNode(true);
