@@ -23,8 +23,8 @@ let pokemonRepository = (function () {
             let content = `Height: ${(pokemon.height / 10).toFixed(1)}m 
                 Weight: ${(pokemon.weight / 10).toFixed(1)}kg
                 Type: ${types}`;
-            let image = pokemon.pixelUrl;
-
+            // let image = pokemon.pixelUrl; //Gen5 Pixel
+            let image = pokemon.gen1Url; // Gen1 Pixel
             modalModule.showModal(capitalize(pokemon.name), content, image);
         });
     }
@@ -102,7 +102,7 @@ let pokemonRepository = (function () {
                 item.imageUrl =
                     details.sprites.other['official-artwork'].front_default;
                 item.pixelUrl = details.sprites.front_default;
-                item.weight = details.weight;
+                item.gen1Url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/yellow/transparent/${details.id}.png`;
             })
             .catch(function (e) {
                 console.error(e);
