@@ -2,7 +2,7 @@
 
 ## App Features
 
--   Loads data of 150 Pokémon from PokéApi
+-   Loads Pokémon data from PokéApi
 -   Displays each pokemon as a styled button with name and image
 -   Button click displays styled modal with
     -   Name
@@ -10,6 +10,7 @@
     -   Weight
     -   Type
     -  Image
+-   Infinate Scroll Functionality
 -   Responsive layout
 
 ## Technology Used
