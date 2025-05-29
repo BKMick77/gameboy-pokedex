@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'Game Boy 1989';
+    src: url('../Fonts/GameBoy1989.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendo';
+    src: url('../Fonts/Pretendo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../Fonts/Helvetica-Condensed-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica_Condenced-Normal';
+    src: url('../Fonts/Helvetica_Condenced-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../Fonts/PokemonSolidNormal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .cart--gray {
     --primary: #999;
     --secondary: #737373;
