@@ -1,0 +1,26 @@
+{
+  "name": "gameboy-pokedex",
+  "version": "1.0.0",
+  "description": "## Check out the live app [here](https://bkmick77.github.io/gameboy-pokedex/)",
+  "main": "stylelint.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BKMick77/gameboy-pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BKMick77/gameboy-pokedex/issues"
+  },
+  "homepage": "https://github.com/BKMick77/gameboy-pokedex#readme",
+  "dependencies": {
+    "eslint": "^9.27.0"
+  }
+}
