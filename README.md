@@ -10,6 +10,7 @@
     -   Weight
     -   Type
     -   Image
+- Infinite Scroll Functionality
 -   Responsive layout
 
 ## Technology Used
