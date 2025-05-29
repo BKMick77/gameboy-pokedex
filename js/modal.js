@@ -1,4 +1,4 @@
-let modalModule = (function () {
+window.modalModule = (function () {
     let currentModal;
 
     function showModal(title, text, pixelUrl) {
