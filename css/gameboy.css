@@ -1,43 +1,3 @@
-@font-face {
-    font-family: 'Game Boy 1989';
-    src: url('../Fonts/GameBoy1989.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendo';
-    src: url('../Fonts/Pretendo.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../Fonts/Orbitron-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url('../Fonts/PressStart2P-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Helvetica_Condenced-Normal';
-    src: url('../Fonts/Helvetica_Condenced-Normal.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 .gameboy-modal {
     position: fixed;
     top: 0;
@@ -45,6 +5,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    font-size: 100%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
@@ -53,10 +14,6 @@
 
 .gameboy-modal.is-visible {
     display: flex;
-}
-
-.gameboy-modal {
-    font-size: 100%;
 }
 
 .gameboy {
@@ -131,12 +88,12 @@
     z-index: 3;
 }
 
-.dot-matrix {
+.gameboy .screen-border .dot-matrix {
     font-family: 'Helvetica_Condenced-Normal';
     font-size: 0.85rem;
     color: #e9e8e6;
     left: 11.75rem;
-    top: 0.25rem;
+    top: 0.15rem;
     position: absolute;
     border-radius: 8%;
     z-index: 3;
