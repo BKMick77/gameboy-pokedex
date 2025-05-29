@@ -113,6 +113,7 @@ let pokemonRepository = (function () {
             .then(function (details) {
                 item.height = details.height;
                 item.types = details.types;
+                item.weight = details.weight;
                 item.imageUrl =
                     details.sprites.other['official-artwork'].front_default;
                 item.pixelUrl = details.sprites.front_default;
