@@ -1,9 +1,6 @@
 # dependencies
 node_modules/
 
-# local build artifacts (can be safely regenerated)
-dist/
-
 # system files
 .DS_Store
 
