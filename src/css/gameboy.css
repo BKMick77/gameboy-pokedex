@@ -54,7 +54,7 @@
   aspect-ratio: 1 / 1;
   background: #8a9f54;
   border-radius: 10px;
-  font-family: "Press Start 2P", monospace;
+  font-family: 'Press Start 2P', monospace;
   text-align: center;
   border: 1px solid #000;
   display: flex;
@@ -103,7 +103,7 @@
 }
 
 .gameboy .screen-border .dot-matrix {
-  font-family: "Helvetica_Condenced-Normal";
+  font-family: 'Helvetica_Condenced-Normal';
   font-size: 0.85rem;
   color: #e9e8e6;
   left: 11.75rem;
@@ -148,7 +148,7 @@
 }
 
 .battery {
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
   font-size: 0.72rem;
   color: #e9e8e6;
   left: 0.13rem;
@@ -168,7 +168,7 @@
   display: flex;
   position: absolute;
   left: 1px;
-  font-family: "Pretendo";
+  font-family: 'Pretendo';
   font-size: 1rem;
   top: 0.65rem;
   color: #242060;
@@ -178,7 +178,7 @@
   display: flex;
   position: absolute;
   left: 87px;
-  font-family: "Game Boy 1989";
+  font-family: 'Game Boy 1989';
   font-size: 1.75rem;
   top: 0.1rem;
   letter-spacing: 0.02em;
@@ -189,7 +189,7 @@
   display: flex;
   position: absolute;
   left: 225px;
-  font-family: "Game Boy 1989";
+  font-family: 'Game Boy 1989';
   font-size: 0.65rem;
   top: 1.1rem;
   color: #242060;
@@ -232,14 +232,14 @@
 }
 
 .a-button-text {
-  font-family: "Orbitron";
+  font-family: 'Orbitron';
   font-size: 0.85rem;
   font-weight: 700;
   color: #242060;
 }
 
 .b-button-text {
-  font-family: "Orbitron";
+  font-family: 'Orbitron';
   font-size: 0.85rem;
   font-weight: 700;
   color: #242060;
@@ -293,7 +293,7 @@
   transform: rotate(-30deg);
   top: 217px;
   left: 205px;
-  font-family: "Orbitron";
+  font-family: 'Orbitron';
   font-weight: bolder;
   font-size: 0.65rem;
   font-weight: 700;
@@ -322,7 +322,7 @@
   transform: rotate(-30deg);
   top: 206px;
   left: 150px;
-  font-family: "Orbitron";
+  font-family: 'Orbitron';
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.1em;

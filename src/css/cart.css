@@ -72,7 +72,7 @@
   position: absolute;
   top: 2.5rem;
   left: 2.45rem;
-  font-family: "Pretendo";
+  font-family: 'Pretendo';
   font-size: 0.7rem;
   color: var(--primary);
   text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
@@ -84,7 +84,7 @@
   position: absolute;
   top: 2.1rem;
   left: 6.2rem;
-  font-family: "Game Boy 1989";
+  font-family: 'Game Boy 1989';
   font-size: 1.23rem;
   letter-spacing: 0.014em;
   color: var(--primary);
@@ -97,7 +97,7 @@
   position: absolute;
   top: 2.8rem;
   left: 12.2rem;
-  font-family: "Game Boy 1989";
+  font-family: 'Game Boy 1989';
   font-size: 0.455rem;
   color: var(--primary);
   text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
@@ -115,7 +115,7 @@
   top: 5.25rem;
   border: 3.5px solid var(--secondary);
   border-radius: 3%;
-  font-family: "Pokemon Solid";
+  font-family: 'Pokemon Solid';
   font-size: 1.5em;
   color: #ffcb03;
   -webkit-text-stroke: 1px #0100d7;

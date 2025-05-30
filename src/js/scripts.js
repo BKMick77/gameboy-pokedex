@@ -1,6 +1,6 @@
 let pokemonRepository = (function () {
   let pokemon = [];
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=48&offset=0";
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=48&offset=0';
   let isLoading = false;
   let hasMore = true;
 
@@ -27,7 +27,7 @@ let pokemonRepository = (function () {
     pokemonRepository.loadDetails(pokemon).then(function () {
       let types = pokemon.types
         .map((typeSlot) => typeSlot.type.name)
-        .join(", ");
+        .join(', ');
       let content = `Height: ${(pokemon.height / 10).toFixed(1)}m 
                 Weight: ${(pokemon.weight / 10).toFixed(1)}kg
                 Type: ${types}`;
@@ -40,32 +40,32 @@ let pokemonRepository = (function () {
   // Add a Pokémon to the list in the DOM
   // This function creates a new list item for a Pokémon and appends it to the DOM
   function addListItem(pokemon) {
-    let list = document.querySelector(".pokemon-list");
-    let template = document.querySelector("#cartridge-template");
+    let list = document.querySelector('.pokemon-list');
+    let template = document.querySelector('#cartridge-template');
 
-    let col = document.createElement("div");
-    col.classList.add("col-12", "col-md-6", "col-lg-4", "mb-3");
+    let col = document.createElement('div');
+    col.classList.add('col-12', 'col-md-6', 'col-lg-4', 'mb-3');
 
     // (true) clones entire sub tree of template
     let clone = template.content.cloneNode(true);
 
     // random color with Math.floor() Math.random()
-    let cartColors = ["cart--red", "cart--blue", "cart--yellow", "cart--gray"];
+    let cartColors = ['cart--red', 'cart--blue', 'cart--yellow', 'cart--gray'];
     let randomColor = cartColors[Math.floor(Math.random() * cartColors.length)];
 
     //  finds and removes red wrapper
-    let shell = clone.querySelector(".cart--red");
-    shell.classList.remove("cart--red");
+    let shell = clone.querySelector('.cart--red');
+    shell.classList.remove('cart--red');
     shell.classList.add(randomColor);
 
     // fills Pokemon data
-    clone.querySelector(".poke-name").textContent = capitalize(pokemon.name);
-    let image = clone.querySelector(".poke-sprite");
+    clone.querySelector('.poke-name').textContent = capitalize(pokemon.name);
+    let image = clone.querySelector('.poke-sprite');
     image.src = pokemon.imageUrl;
     image.alt = pokemon.name;
 
-    let cartBody = clone.querySelector(".cart-body");
-    cartBody.addEventListener("click", () => {
+    let cartBody = clone.querySelector('.cart-body');
+    cartBody.addEventListener('click', () => {
       showDetails(pokemon);
     });
 
@@ -106,7 +106,7 @@ let pokemonRepository = (function () {
         item.height = details.height;
         item.types = details.types;
         item.weight = details.weight;
-        item.imageUrl = details.sprites.other["official-artwork"].front_default;
+        item.imageUrl = details.sprites.other['official-artwork'].front_default;
         item.pixelUrl = details.sprites.front_default;
         item.gen1Url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/yellow/transparent/${details.id}.png`;
       })
@@ -166,7 +166,7 @@ pokemonRepository.loadList().then(() => {
       pokemonRepository.addListItem(pokemon);
     });
   });
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (
       window.innerHeight + window.scrollY >=
       document.body.offsetHeight - 100
