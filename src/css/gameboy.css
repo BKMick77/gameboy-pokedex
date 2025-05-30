@@ -387,7 +387,19 @@
   border: 0.5px solid #000;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .gameboy-modal {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .gb-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .gameboy {
     transform: scale(0.75);
     transform-origin: top center;
