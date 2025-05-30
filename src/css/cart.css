@@ -1,314 +1,319 @@
 .cart--gray {
-    --primary: #999;
-    --secondary: #737373;
-    --border: #5a5a5a;
-    --label: #000;
+  --primary: #999;
+  --secondary: #737373;
+  --border: #5a5a5a;
+  --label: #000;
 }
 
 .cart--red {
-    --primary: #df001e;
-    --secondary: #ac0017;
-    --border: #60000d;
-    --label: #20ffe1;
+  --primary: #df001e;
+  --secondary: #ac0017;
+  --border: #60000d;
+  --label: #20ffe1;
 }
 
 .cart--blue {
-    --primary: #0100d7;
-    --secondary: #010072;
-    --border: #000025;
-    --label: gold;
+  --primary: #0100d7;
+  --secondary: #010072;
+  --border: #000025;
+  --label: gold;
 }
 
 .cart--yellow {
-    --primary: #f1b100;
-    --secondary: #be8c00;
-    --border: #725400;
-    --label: #0e4eff;
+  --primary: #f1b100;
+  --secondary: #be8c00;
+  --border: #725400;
+  --label: #0e4eff;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
 }
 
 .cart-body:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cart-body {
-    cursor: pointer;
-    user-select: none;
-    outline: none;
-    position: relative;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    justify-items: center;
-    margin: 30px;
-    width: 245px;
-    aspect-ratio: 6 / 7;
-    background: var(--primary);
-    border-radius: 7px 0% 0%;
-    clip-path: polygon(
-        0 0,
-        calc(100% - 22.4px) 0,
-        calc(100% - 22.4px) 7px,
-        100% 7px,
-        100% 100%,
-        0 100%
-    );
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  margin: 30px;
+  width: 245px;
+  aspect-ratio: 6 / 7;
+  background: var(--primary);
+  border-radius: 7px 0% 0%;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 22.4px) 0,
+    calc(100% - 22.4px) 7px,
+    100% 7px,
+    100% 100%,
+    0 100%
+  );
 }
 
 .logo {
-    position: absolute;
-    width: 182px;
-    height: 45.5px;
-    border-radius: 21px / 35px;
-    top: 1.26rem;
-    background-color: var(--secondary);
-    border: 3.5px solid var(--border);
+  position: absolute;
+  width: 182px;
+  height: 45.5px;
+  border-radius: 21px / 35px;
+  top: 1.26rem;
+  background-color: var(--secondary);
+  border: 3.5px solid var(--border);
 }
 
 .nintendo-logo {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.45rem;
-    font-family: 'Pretendo';
-    font-size: 0.7rem;
-    color: var(--primary);
-    text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
-        -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
+  position: absolute;
+  top: 2.5rem;
+  left: 2.45rem;
+  font-family: "Pretendo";
+  font-size: 0.7rem;
+  color: var(--primary);
+  text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
+    -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
 }
 
 .gb-logo {
-    display: flex;
-    position: absolute;
-    top: 2.1rem;
-    left: 6.2rem;
-    font-family: 'Game Boy 1989';
-    font-size: 1.23rem;
-    letter-spacing: 0.014em;
-    color: var(--primary);
-    text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
-        -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
+  display: flex;
+  position: absolute;
+  top: 2.1rem;
+  left: 6.2rem;
+  font-family: "Game Boy 1989";
+  font-size: 1.23rem;
+  letter-spacing: 0.014em;
+  color: var(--primary);
+  text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
+    -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
 }
 
 .tm {
-    display: flex;
-    position: absolute;
-    top: 2.8rem;
-    left: 12.2rem;
-    font-family: 'Game Boy 1989';
-    font-size: 0.455rem;
-    color: var(--primary);
-    text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
-        -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
+  display: flex;
+  position: absolute;
+  top: 2.8rem;
+  left: 12.2rem;
+  font-family: "Game Boy 1989";
+  font-size: 0.455rem;
+  color: var(--primary);
+  text-shadow: -0.7px -0.7px 0 var(--border), 0.7px -0.7px 0 var(--border),
+    -0.7px 0.7px 0 var(--border), 0.7px 0.7px 0 var(--border);
 }
 
 .label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 189px;
-    aspect-ratio: 1.25 / 1;
-    top: 5.25rem;
-    border: 3.5px solid var(--secondary);
-    border-radius: 3%;
-    font-family: 'Pokemon Solid';
-    font-size: 1.5em;
-    color: #ffcb03;
-    -webkit-text-stroke: 1px #0100d7;
-    text-align: center;
-    letter-spacing: 1px;
-    background: linear-gradient(
-        to right,
-        silver 0 14.5px,
-        #000 14.5px 15px,
-        var(--label) 15px calc(100% - 15px),
-        #000 calc(100% - 15px) calc(100% - 14.5px),
-        silver calc(100% - 14.5px) 100%
-    );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 189px;
+  aspect-ratio: 1.25 / 1;
+  top: 5.25rem;
+  border: 3.5px solid var(--secondary);
+  border-radius: 3%;
+  font-family: "Pokemon Solid";
+  font-size: 1.5em;
+  color: #ffcb03;
+  -webkit-text-stroke: 1px #0100d7;
+  text-align: center;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to right,
+    silver 0 14.5px,
+    #000 14.5px 15px,
+    var(--label) 15px calc(100% - 15px),
+    #000 calc(100% - 15px) calc(100% - 14.5px),
+    silver calc(100% - 14.5px) 100%
+  );
 }
 
 .poke-sprite {
-    max-height: 100px;
-    max-width: 90%;
-    object-fit: contain;
-    display: block;
+  max-height: 100px;
+  max-width: 90%;
+  object-fit: contain;
+  display: block;
 }
 
 .label h5 {
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 1;
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1;
 }
 
 .triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 28px solid transparent;
-    border-right: 28px solid transparent;
-    border-top: 28px solid var(--secondary);
-    top: 15.58rem;
-    border-radius: 5%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  border-top: 28px solid var(--secondary);
+  top: 15.58rem;
+  border-radius: 5%;
 }
 
 .side-notch__r {
-    position: absolute;
-    width: 10.5px;
-    height: 154px;
-    background-color: var(--secondary);
-    bottom: 0;
-    right: 0px;
-    border-top: 1.05px solid var(--border);
-    border-left: 1.05px solid var(--border);
+  position: absolute;
+  width: 10.5px;
+  height: 154px;
+  background-color: var(--secondary);
+  bottom: 0;
+  right: 0px;
+  border-top: 1.05px solid var(--border);
+  border-left: 1.05px solid var(--border);
 }
 
 .side-notch__l {
-    position: absolute;
-    width: 10.5px;
-    height: 154px;
-    background-color: var(--secondary);
-    bottom: 0;
-    left: 0px;
-    border-top: 1.05px solid var(--border);
-    border-right: 1.05px solid var(--border);
+  position: absolute;
+  width: 10.5px;
+  height: 154px;
+  background-color: var(--secondary);
+  bottom: 0;
+  left: 0px;
+  border-top: 1.05px solid var(--border);
+  border-right: 1.05px solid var(--border);
 }
 
 .side-text__r {
-    position: absolute;
-    font-size: 0.6rem;
-    color: #333;
-    font-family: Helvetica;
-    letter-spacing: 1px;
-    writing-mode: vertical-rl;
-    top: 155px;
-    left: 30px;
-    font-weight: 900;
+  position: absolute;
+  font-size: 0.6rem;
+  color: #333;
+  font-family: Helvetica;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  top: 155px;
+  left: 30px;
+  font-weight: 900;
 }
 
 .side-text__l {
-    position: absolute;
-    font-size: 0.6rem;
-    color: #333;
-    font-family: Helvetica;
-    letter-spacing: 1px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    top: 130px;
-    left: 200px;
-    font-weight: 900;
+  position: absolute;
+  font-size: 0.6rem;
+  color: #333;
+  font-family: Helvetica;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  top: 130px;
+  left: 200px;
+  font-weight: 900;
 }
 
 .grip-r1 {
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 28.7px;
-    left: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-right: 0.7px solid var(--border);
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 28.7px;
+  left: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-right: 0.7px solid var(--border);
 }
 .grip-r2 {
-    position: absolute;
-    width: 25.9px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 37.1px;
-    left: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-right: 0.7px solid var(--border);
+  position: absolute;
+  width: 25.9px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 37.1px;
+  left: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-right: 0.7px solid var(--border);
 }
 .grip-r3 {
-    position: absolute;
-    width: 24.5px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 45.5px;
-    left: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-right: 0.7px solid var(--border);
+  position: absolute;
+  width: 24.5px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 45.5px;
+  left: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-right: 0.7px solid var(--border);
 }
 
 .grip-r4 {
-    position: absolute;
-    width: 25.9px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 53.9px;
-    left: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-right: 0.7px solid var(--border);
+  position: absolute;
+  width: 25.9px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 53.9px;
+  left: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-right: 0.7px solid var(--border);
 }
 
 .grip-r5 {
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 62.3px;
-    left: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-right: 0.7px solid var(--border);
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 62.3px;
+  left: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-right: 0.7px solid var(--border);
 }
 
 .grip-l1 {
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 28.7px;
-    right: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-left: 0.7px solid var(--border);
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 28.7px;
+  right: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-left: 0.7px solid var(--border);
 }
 .grip-l2 {
-    position: absolute;
-    width: 25.9px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 37.1px;
-    right: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-left: 0.7px solid var(--border);
+  position: absolute;
+  width: 25.9px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 37.1px;
+  right: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-left: 0.7px solid var(--border);
 }
 .grip-l3 {
-    position: absolute;
-    width: 24.5px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 45.5px;
-    right: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-left: 0.7px solid var(--border);
+  position: absolute;
+  width: 24.5px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 45.5px;
+  right: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-left: 0.7px solid var(--border);
 }
 
 .grip-l4 {
-    position: absolute;
-    width: 25.9px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 53.9px;
-    right: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-left: 0.7px solid var(--border);
+  position: absolute;
+  width: 25.9px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 53.9px;
+  right: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-left: 0.7px solid var(--border);
 }
 
 .grip-l5 {
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: var(--secondary);
-    top: 62.3px;
-    right: 0px;
-    border-top: 0.7px solid var(--border);
-    border-bottom: 0.7px solid var(--border);
-    border-left: 0.7px solid var(--border);
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: var(--secondary);
+  top: 62.3px;
+  right: 0px;
+  border-top: 0.7px solid var(--border);
+  border-bottom: 0.7px solid var(--border);
+  border-left: 0.7px solid var(--border);
 }
