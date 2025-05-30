@@ -147,16 +147,16 @@ let pokemonRepository = (function () {
       });
   }
 
-  loadMore();
+  //   loadMore();
   // Infinite scroll
 
   return {
-    getAll: getAll,
-    add: add,
-    addListItem: addListItem,
-    loadList: loadList,
-    loadDetails: loadDetails,
-    loadMore: loadMore,
+    getAll,
+    add,
+    addListItem,
+    loadList,
+    loadDetails,
+    loadMore,
   };
 })();
 
