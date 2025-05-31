@@ -400,12 +400,8 @@
     overflow: hidden;
   }
 
-  .gb-wrapper {
+  .gameboy {
     transform: scale(0.85);
     transform-origin: top center;
   }
-}
-
-.gameboy {
-  transform: scale(0.85);
 }
