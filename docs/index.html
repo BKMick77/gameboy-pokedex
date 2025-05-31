@@ -134,6 +134,21 @@
         </div>
       </div>
     </template>
+    <style>
+      @media (max-width: 600px) {
+        .gameboy-modal {
+          align-items: flex-start;
+          justify-content: center;
+          padding-top: 1rem;
+          overflow: hidden;
+        }
+
+        .gameboy {
+          transform: scale(0.85);
+          transform-origin: top center;
+        }
+      }
+    </style>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
