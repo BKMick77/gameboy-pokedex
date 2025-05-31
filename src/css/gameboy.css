@@ -1,3 +1,8 @@
+.gb-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .gameboy-modal {
   position: fixed;
   top: 0;
@@ -392,6 +397,7 @@
     align-items: flex-start;
     justify-content: center;
     padding-top: 1rem;
+    overflow: hidden;
   }
 
   .gb-wrapper {
