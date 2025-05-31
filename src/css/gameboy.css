@@ -406,6 +406,6 @@
   }
 }
 
-/* .gameboy {
-    transform: scale(0.85);
-  } */
+.gameboy {
+  transform: scale(0.85);
+}
