@@ -391,17 +391,3 @@
   background: #d2ceca;
   border: 0.5px solid #000;
 }
-
-@media (max-width: 600px) {
-  .gameboy-modal {
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 1rem;
-    overflow: hidden;
-  }
-
-  .gameboy {
-    transform: scale(0.85);
-    transform-origin: top center;
-  }
-}
