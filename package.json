@@ -2,7 +2,7 @@
   "name": "gameboy-pokedex",
   "version": "1.0.0",
   "description": "## Check out the live app [here](https://bkmick77.github.io/gameboy-pokedex/)",
-  "main": "stylelint.config.js",
+  "main": "src/index.html",
   "directories": {
     "doc": "docs"
   },
