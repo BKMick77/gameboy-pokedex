@@ -406,10 +406,10 @@
   }
 
   .gb-wrapper {
-    transform: scale(0.75);
+    transform: scale(0.85);
     transform-origin: top center;
-    width: 422px; /* original width */
-    height: 697px; /* original height */
-    margin-bottom: 2rem; /* optional, helps avoid vertical scroll */
+    width: 422px;
+    height: 697px;
+    margin-bottom: 2rem;
   }
 }
